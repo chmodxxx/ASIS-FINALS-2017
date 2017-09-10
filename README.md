@@ -42,14 +42,17 @@ cookies={'session':'.eJwlyU0LgjAYAOC_Eu-5w9SCNugUOJl6iGgub21-QG4Z6Aab-N8zuj7PAv2
 
 r=requests.post('https://golem.asisctf.com/golem',cookies=cookies)
 
-print r.text``````
+print r.text
+```
 
 <br>
 Response contained flag : ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}
 
 
-
+<br>
 ---------------------------------------------------------------------------------------------------------------------------------
+<br>
+
 Task name :  GSA File Server  <br>
 Category : Web <br>
 
