@@ -94,3 +94,15 @@ for z in range(0, 50):
 nc.interactive()```
 <br>
 Flag : ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}
+<br><br>
+<b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+<br><br>
+Task name :   Vivid Spying   <br>
+Category : Networking <br>
+Description :      We have captured the spy traffic by our agents, hurry up and find the flag. : <br>
+Challenge : <br> 
+The challenge provided a DNS capture, after analyzing it for a bit we can extract some prefix in a domain name asisctf.com<br>
+10.111110100001001111101011001010011100100010001011111010000101100.010111010010110111011101111101011100110011101101001011010011110.000011101100101011111010110111101100101010010010110010101000001.asisctf.com <br>
+Cleaning that prefix from dots and reading it right to right didn't give printable string <br>
+after adding a zero it becomes : 010000010101001101001001010100110111101101011111010100110111000001111001011010010110111001100111010111110111011101101001011101000110100001011111010001000100111001010011010111110010000101111101 <br>
+bin to ascii => ASIS{_Spying_with_DNS_!} 
