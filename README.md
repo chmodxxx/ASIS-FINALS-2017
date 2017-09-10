@@ -79,7 +79,8 @@ tldr ; play one game to generate sequence of winning moves, repeat same sequence
 Challenge : <br>
 Challenge was Reversi game vs an AI, the problem was that the same game was repeated, and the AI did same moves, so we need to win just one game, store the moves that we used and repeat for all games <br>
 
-```from pwn import *
+```
+from pwn import *
 
 nc = remote("178.62.22.245",32145)
 for z in range(0, 50):
@@ -91,7 +92,9 @@ for z in range(0, 50):
         print m
         nc.writeline(seq[i])
 
-nc.interactive()```````
+nc.interactive()
+```
+
 <br>
 Flag : ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}
 <br><br>
