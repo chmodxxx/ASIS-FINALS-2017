@@ -1,8 +1,8 @@
 
 # ASIS-FINALS-2017
--Task name : Golem is stupid <br>
+-<b>Task name : Golem is stupid <br>
 -Category : Web <br>
- 
+ </b>
 -Description :  Golem is an animated anthropomorphic being that is magically created entirely from inanimate matter, but Golem is stupid! <br>
 <br>
 
@@ -52,10 +52,10 @@ print r.text
 -<br><br>
 -<b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 -<br><br><br>
-
+<b>
 -Task name :  GSA File Server  <br>
 -Category : Web <br>
-
+</b>
 -Description :  GSA's file server, go find the hole, drill it and grab the flag :)
 -Note that Scope is 128.199.40.185:* <br>
 <br>
@@ -71,9 +71,9 @@ print r.text
 -Flag : <b>ASIS{Vuln_web_appZ_plus_misc0nfig_eQ_dis4st3R!}</b>
 -<br><br>
 -<b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
--<br><br><br>
+-<br><br><br><b>
 -Task name :   Chaoyang District   <br>
--Category : PPC <br>
+-Category : PPC <br></b>
 -Description :  This is an AI programming challenge, so binary is not required to be provided. <br>
 -tl;dr : play one game to generate sequence of winning moves, repeat same sequences 50 times ;) <br>
 -Challenge : <br>
@@ -105,9 +105,9 @@ while True:
 Flag : <b>ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}</b>
 <br><br>
 -<b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
--<br><br>
+-<br><br><b>
 -Task name :   Vivid Spying   <br>
--Category : Networking <br>
+-Category : Networking <br></b>
 -Description :      We have captured the spy traffic by our agents, hurry up and find the flag. : <br>
 -Challenge : <br> 
 -The challenge provided a DNS capture, after analyzing it for a bit we can extract some prefix in a domain name asisctf.com<br>
