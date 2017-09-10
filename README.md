@@ -6,7 +6,7 @@
 -Description :  Golem is an animated anthropomorphic being that is magically created entirely from inanimate matter, but Golem is stupid! <br>
 <br>
 
--tldr ; SSTI to get RCE in flask session token <br>
+-tl;dr : SSTI to get RCE in flask session token <br>
 
 -Challenge : <br>
 -first could find obvious LFI  https://golem.asisctf.com/article?name=../../../etc/passwd  and leak etc/passwd <br>
@@ -60,7 +60,7 @@ print r.text
 -Note that Scope is 128.199.40.185:* <br>
 <br>
 
--tldr ; Exploit XXE and Use a directory listing vuln to read flag<br>
+-tl;dr : Exploit XXE and Use a directory listing vuln to read flag<br>
 
 -Challenge : <br>
 -First find :http://128.199.40.185/showFiles was vuln to directory listing<br>
@@ -75,7 +75,7 @@ print r.text
 -Task name :   Chaoyang District   <br>
 -Category : PPC <br>
 -Description :  This is an AI programming challenge, so binary is not required to be provided. <br>
--tldr ; play one game to generate sequence of winning moves, repeat same sequences 50 times ;) <br>
+-tl;dr : play one game to generate sequence of winning moves, repeat same sequences 50 times ;) <br>
 -Challenge : <br>
 -Challenge was Reversi game vs an AI, the problem was that the same game was repeated, and the AI did same moves, so we need to win just one game, store the moves that we used and repeat for all games <br>
 
