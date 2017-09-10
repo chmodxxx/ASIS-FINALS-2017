@@ -51,7 +51,7 @@ Response contained flag : ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}
 
 <br>
 <b>------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
-<br>
+<br><br><br>
 
 Task name :  GSA File Server  <br>
 Category : Web <br>
@@ -66,6 +66,6 @@ Challenge : <br>
 First find :http://128.199.40.185/showFiles was vuln to directory listing<br>
 Second find : http://128.199.40.185:8081/panelManager-0.1/ XXE injection in docx file <br>
 the solution was to download their doc file called (demo) open with archive and change inner xml (word/document.xml) with an xxe  php filter was working <br>
-<!DOCTYPE roottag [<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=../../../../fileSharing/s3cRetP4th/flagIsHeregRabiT.flag"> ]>
+```<!DOCTYPE roottag [<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=../../../../fileSharing/s3cRetP4th/flagIsHeregRabiT.flag"> ]>```<br>
 <br> the directory of the flag was found using the first vuln <br>
 Flag : ASIS{Vuln_web_appZ_plus_misc0nfig_eQ_dis4st3R!}
