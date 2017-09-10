@@ -91,7 +91,7 @@ for z in range(0, 50):
         print m
         nc.writeline(seq[i])
 
-nc.interactive()```
+nc.interactive()```````
 <br>
 Flag : ASIS{Th3_Bra1n_Wash1nG_HAHA_AI_IS_INTERESTING}
 <br><br>
