@@ -31,8 +31,9 @@ def run():
 
 if __name__ == '__main__':
     app.secret_key = '7h15_5h0uld_b3_r34lly_53cur3d'
-    app.run(host='127.0.0.1', port=2222, debug=True)```
-    
+    app.run(host='127.0.0.1', port=2222, debug=True)
+--------------------------------------------------------------------------------------------------------------------
+
 #exploiting 
 import requests
 
