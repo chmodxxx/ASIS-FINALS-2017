@@ -85,7 +85,7 @@ import socket
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect(('178.62.22.245',32145))
-seq=['e3','c5','b5','g3','b3','a5','b7','a7','d7','e6','a4','a8','e1','b1','g8','c8','g5','h2','g1','h6','g7','h7','d8','c1','e8','a2','h3','h5'
+seq=['e3','c5','b5','g3','b3','a5','b7','a7','d7','e6','a4','a8','e1','b1','g8','c8','g5','h2','g1','h6','g7','h7','d8','c1','e8','a2','h3','h5']
 i=0
 j=0
 while True:
